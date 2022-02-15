@@ -16,7 +16,6 @@ export default async function renderCollections() {
 		cotegotyItem.classList.add('cotegory__item');
 
 		el.preview_photos.forEach(ph => {
-			console.log(ph)
 			const img = document.createElement('img');
 			img.src = `${ph.urls.regular}`;
 			img.alt = `image`;
@@ -31,7 +30,5 @@ export default async function renderCollections() {
 		cotegotyItem.insertAdjacentHTML('afterbegin', title);
 		cotegotyItem.append(content);
 		topicsCotegory.append(cotegotyItem);
-		console.log(el)
-
 	});
 }
