@@ -1,6 +1,8 @@
 @import "nullstyle.scss";
 
 .wraper {
+	display: flex;
+	flex-direction: column;
 	min-height: 100vh;
 	overflow: hidden;
 	background-color: #ffdee9;
@@ -49,6 +51,7 @@
 	}
 }
 .topics {
+	flex: 1 1 auto;
 	&__container {
 	}
 

@@ -22,10 +22,9 @@ export const getTopic = async () => {
 	return await getData(url);
 }
 
-export const search = async (query, page, oriented) => {
+export const getSearch = async (query, page, oriented) => {
 	const url = `${BASE_URL}search/photos?per_page=${page}&query=${query}&orientation=${oriented}&client_id=${API_KEY}`;
 	return await getData(url);
 }
 
 
-console.log(search('office', 30, 'landscape'))
